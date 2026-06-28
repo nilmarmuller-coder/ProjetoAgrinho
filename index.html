@@ -1,85 +1,242 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto
-        - Agricultura Sustentável</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Futuro Sustentável</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f9f4;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    height:100vh;
+    background:linear-gradient(rgba(0,80,40,.6),rgba(0,80,40,.6)),
+    url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1500&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+header h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+header p{
+    font-size:1.3rem;
+    max-width:700px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#2ecc71;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#27ae60;
+}
+
+section{
+    padding:70px 10%;
+}
+
+.titulo{
+    text-align:center;
+    color:#1b5e20;
+    font-size:2.3rem;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#2e7d32;
+    margin-bottom:15px;
+}
+
+.banner{
+    background:linear-gradient(90deg,#2e7d32,#43a047);
+    color:white;
+    text-align:center;
+    padding:70px 10%;
+}
+
+.banner h2{
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.lista{
+    max-width:900px;
+    margin:auto;
+}
+
+.lista li{
+    margin:15px 0;
+    font-size:1.1rem;
+}
+
+@media(max-width:700px){
+header h1{
+font-size:2.7rem;
+}
+}
+</style>
+
 </head>
 <body>
-    <!-- Navegação -->
-    <nav class="navbar">
-        <div class="container">
-            <h1 class="logo">🌱 ProjetoAgrinho</h1>
-            <ul class=
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Seção Hero -->
-    <section id="home" class="hero">
-        <div class="container">
-            <h2>Bem-vindo ao ProjetoAgrinho</h2>
-            <p>Promovendo uma agricultura sustentável e responsável</p>
-            <button class="cta-btn" onclick="scrollToSection('about')">Saiba Mais</button>
-        </div>
-    </section>
+<header>
 
-    <!-- Seção Sobre -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>Sobre o Projeto</h2>
-            <p>O ProjetoAgrinho é uma iniciativa dedicada a educar e conscientizar sobre práticas agrícolas sustentáveis. 
-            Nosso objetivo é promover a conscientização ambiental e a agricultura responsável entre crianças e adolescentes.</p>
-        </div>
-    </section>
+<div>
+<h1>🌱 Futuro Sustentável</h1>
 
-    <!-- Seção Serviços -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Nossos Serviços</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>🌿 Educação</h3>
-                    <p>Materiais educativos sobre sustentabilidade agrícola</p>
-                </div>
-                <div class="service-card">
-                    <h3>🌍 Conscientização</h3>
-                    <p>Campanhas de conscientização ambiental</p>
-                </div>
-                <div class="service-card">
-                    <h3>🤝 Comunidade</h3>
-                    <p>Conectando agricultores e entusiastas da natureza</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<p>
+O desenvolvimento do planeta depende do equilíbrio entre crescimento econômico,
+produção responsável e preservação ambiental.
+A inovação permite produzir mais utilizando menos recursos naturais.
+</p>
 
-    <!-- Seção Contato -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Entre em Contato</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Seu Nome" required>
-                <input type="email" placeholder="Seu Email" required>
-                <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
-                <button type="submit" class="submit-btn">Enviar</button>
-            </form>
-        </div>
-    </section>
+<a href="#sobre" class="btn">Conheça mais</a>
 
-    <!-- Rodapé -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 ProjetoAgrinho. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+</div>
 
-    <script src="script.js"></script>
+</header>
+
+<section id="sobre">
+
+<h2 class="titulo">
+Produzir com responsabilidade
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🌳 Preservação Ambiental</h3>
+<p>
+A conservação das florestas, rios e biodiversidade garante recursos naturais para as futuras gerações.
+</p>
+</div>
+
+<div class="card">
+<h3>🏭 Indústria Sustentável</h3>
+<p>
+Empresas podem reduzir desperdícios, reutilizar materiais e investir em tecnologias limpas.
+</p>
+</div>
+
+<div class="card">
+<h3>☀ Energia Renovável</h3>
+<p>
+O uso de energia solar, eólica e biomassa reduz a emissão de gases do efeito estufa.
+</p>
+</div>
+
+<div class="card">
+<h3>🌾 Agricultura Inteligente</h3>
+<p>
+Tecnologias agrícolas aumentam a produtividade sem comprometer o solo e os recursos hídricos.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="titulo">
+Como construir um futuro sustentável?
+</h2>
+
+<ul class="lista">
+<li>✅ Incentivar a economia circular.</li>
+<li>✅ Reduzir desperdícios na produção.</li>
+<li>✅ Investir em inovação tecnológica.</li>
+<li>✅ Proteger áreas naturais.</li>
+<li>✅ Promover educação ambiental.</li>
+<li>✅ Consumir de forma consciente.</li>
+</ul>
+
+</section>
+
+<div class="banner">
+
+<h2>
+O equilíbrio entre produção e meio ambiente é o caminho para o futuro.
+</h2>
+
+<p>
+Desenvolvimento sustentável significa crescer economicamente sem comprometer a qualidade de vida das próximas gerações.
+</p>
+
+</div>
+
+<section>
+
+<h2 class="titulo">
+Nossa missão
+</h2>
+
+<p style="text-align:center; max-width:900px; margin:auto; font-size:1.15rem;">
+Criar um mundo onde tecnologia, agricultura, indústria e natureza trabalhem juntas.
+Cada escolha sustentável fortalece um futuro mais verde, equilibrado e próspero para toda a sociedade.
+</p>
+
+</section>
+
+<footer>
+
+<h3>🌍 Futuro Sustentável</h3>
+<p>Equilíbrio entre Produção e Meio Ambiente</p>
+
+</footer>
+
 </body>
 </html>
